@@ -5,7 +5,7 @@
     }
     function activateBatiSenal(): string {
         return 'Activada'
-
     }
+    const aca: string = returnName()
     console.log(typeof activateBatiSenal)
 })()
