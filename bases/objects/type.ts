@@ -2,7 +2,6 @@
     type heroe = {
         name: string, age?: number, power?: Array<string>, getName?: () => string
     }
-
     let fash: heroe = {
         name: 'Aca',
         age: 12,

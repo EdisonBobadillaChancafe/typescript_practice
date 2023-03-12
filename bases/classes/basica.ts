@@ -49,9 +49,19 @@
         ) { }
     }
     class Xmenso extends Mutante {
-
+        salvarelmundo() {
+            return 'Salvado'
+        }
     }
+    class Villian extends Mutante {
+        conquistarmundo() {
+            return 'Destruido'
+        }
+    }
+
+
     const wolverine: Xmenso = new Xmenso('aca1', 'aca1')
+    const magneto: Xmenso = new Xmenso('magneto', 'fierrazp')
     console.log(wolverine)
 
 
