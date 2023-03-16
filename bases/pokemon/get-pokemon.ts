@@ -1,7 +1,10 @@
-import axios, { isCancel, AxiosError } from 'axios';
+
+import axios from "axios"
+console.log('prueba')
 
 const pokemon = async () => {
     const resp = axios.get(`https://pokeapi.co/api/v2/pokemon/${1}`)
+    console.log(resp)
     return resp
 }
 

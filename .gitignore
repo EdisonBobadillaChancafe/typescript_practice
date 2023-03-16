@@ -42,6 +42,7 @@ _ReSharper*/
 # Subversion files
 .svn
 **/bases/node_modules
+**/basesnodes/node_modules
 
 # Microsoft Office temporary files
 ~$*
