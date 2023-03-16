@@ -9,4 +9,4 @@ exports.__esModule = true;
             console.log(err)
         }
     )*/
-console.log('Holamundo'.rainbow);
+console.log('Adiosmundo');

@@ -14,7 +14,7 @@ import * as colors from 'colors'
         }
     )*/
 
-console.log('Holamundo'.rainbow)
+console.log('Adiosmundo')
 
 
 
