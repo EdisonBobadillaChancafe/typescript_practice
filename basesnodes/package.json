@@ -10,12 +10,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/inquirer": "^9.0.3",
     "@types/node": "^18.15.3",
     "@types/yargs": "^17.0.22",
     "nodemon": "^2.0.21"
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "inquirer": "^8.0.0",
     "yargs": "^17.7.1"
   }
 }
