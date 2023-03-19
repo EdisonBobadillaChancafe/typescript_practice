@@ -38,6 +38,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 require('colors');
 var inquirer = require('inquirer');
+var readline = require('readline');
+var Tareas_1 = require("./models/Tareas");
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 var menu_opciones = [
     {
         value: '1',
@@ -112,25 +118,39 @@ var pausa = function () { return __awaiter(void 0, void 0, void 0, function () {
         }
     });
 }); };
-var main = function () { return __awaiter(void 0, void 0, void 0, function () {
-    var otp;
+var leerimput = function (mensaje) { return __awaiter(void 0, void 0, void 0, function () {
+    var question, pendiente;
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                otp = '';
-                _a.label = 1;
-            case 1: return [4 /*yield*/, Monstrarmenu()];
-            case 2:
-                otp = _a.sent();
-                console.log("\n", otp);
-                return [4 /*yield*/, pausa()];
-            case 3:
-                _a.sent();
-                _a.label = 4;
-            case 4:
-                if (otp != 'Salir') return [3 /*break*/, 1];
-                _a.label = 5;
-            case 5: return [2 /*return*/];
+                question = {
+                    type: 'input',
+                    name: 'enter',
+                    message: mensaje
+                };
+                return [4 /*yield*/, inquirer.prompt(question)];
+            case 1:
+                pendiente = _a.sent();
+                return [2 /*return*/, (pendiente)];
+        }
+    });
+}); };
+var main = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var bandera, tareas, otp;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                bandera = true;
+                tareas = new Tareas_1.Tareas();
+                return [4 /*yield*/, Monstrarmenu()]; // close the previous readline Interface
+            case 1:
+                otp = _a.sent() // close the previous readline Interface
+                ;
+                rl = readline.createInterface({
+                    input: process.stdin,
+                    output: process.stdout
+                });
+                return [2 /*return*/];
         }
     });
 }); };
