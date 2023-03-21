@@ -43,6 +43,8 @@ _ReSharper*/
 .svn
 **/bases/node_modules
 **/basesnodes/node_modules
+**/webserver/node_modules
+**/public/node_modules
 
 # Microsoft Office temporary files
 ~$*
