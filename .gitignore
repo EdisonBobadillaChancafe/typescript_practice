@@ -45,6 +45,6 @@ _ReSharper*/
 **/basesnodes/node_modules
 **/webserver/node_modules
 **/public/node_modules
-
+**/ReactPractice/TypeReactGif/node_modules
 # Microsoft Office temporary files
 ~$*
